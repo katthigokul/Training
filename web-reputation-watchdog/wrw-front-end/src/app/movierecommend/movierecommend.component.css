@@ -1,0 +1,14 @@
+.card {
+    min-height: 400px;
+  }
+.card-item {
+    padding: 3px 3px 3px 3px;
+  }
+  .example-card {
+    max-width: width 100%;
+  }
+
+  .my-1{
+    height:400px;
+    width: 100%;
+  }

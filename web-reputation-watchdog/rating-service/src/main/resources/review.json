@@ -1,0 +1,14 @@
+{
+  "title": "Mcdonalds",
+  "entityReview": {
+    "food": 3.6,
+    "service": 4.0,
+    "staff": 4.0,
+    "Value For Money": 4.6
+  },
+  "reviewTitle": "The Food is Awesome",
+  "reviewDescription": "The service is good but food is bad",
+  "reviewedBy": "pushkar@gmail.com",
+  "reviewerScore": 100,
+  "genuine": "True"
+}

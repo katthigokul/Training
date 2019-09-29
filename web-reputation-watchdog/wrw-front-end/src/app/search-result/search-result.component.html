@@ -1,0 +1,33 @@
+<app-header  [isUserLoggedIn]="isUserLoggedIn" [domain]="domain" [emailId]="emailId" [title]='title'></app-header><br>
+<div *ngIf="isResponse" class="col-md-3 mx-auto mt-3" style="min-height: 80vh; margin-top: 150px; padding-top: 30px">
+    <mdb-card class="my-1">
+        <mdb-card-img [src]="card.entityImageUrl" (click)="selectedEntity(card.entityName)"
+            alt="Card image cap"></mdb-card-img>
+        <mdb-card-body>
+            <mdb-card-title>
+                <h4>{{card.entityName}}</h4>
+            </mdb-card-title>
+            <p>{{card.entityDescription}}</p><br>
+            <b>
+                <ngb-rating [rate]="card.overAllRating"></ngb-rating>
+            </b>
+        </mdb-card-body>
+    </mdb-card>
+</div>
+<div *ngIf="!isResponse" class="col-md-3 mx-auto mt-3" style="min-height: 80vh; padding-top: 9%; padding-bottom: 3%;">
+    <mdb-card class="my-1"> 
+        <!-- <mdb-card-img [src]="card.entityImageUrl" (click)="selectedEntity(card.entityName)"
+            alt="Card image cap"></mdb-card-img> -->
+        <mdb-card-body>
+            <mdb-card-title>
+                <h4>
+                    Please Wait while we fetch from external Service
+                </h4>
+                <!-- <h4>{{card.entityName}}</h4> -->
+            </mdb-card-title>
+            <!-- <p>{{card.entityDescription}}</p><br> -->
+            <!-- <ngb-rating [rate]="card.overAllRating"></ngb-rating> -->
+        </mdb-card-body>
+    </mdb-card>
+</div>
+<app-footer style="height: 10vh;"></app-footer>

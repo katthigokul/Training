@@ -1,0 +1,139 @@
+<app-header [isUserLoggedIn]='isUserLoggedIn' [domain]="domain" [emailId]="emailId"></app-header>
+<br>
+    <div class="add-entity mt-5">
+        <mat-card class="container" style="background-color:rgb(15, 5, 58)">
+            <!--card for adding new entity starts-->
+            <mat-card-header style="margin-left:200px">
+                <!--mat card header starts-->
+                <mat-card-title class="card-title">
+                    <!--title starts-->
+                    <h5> Add New Movie </h5>
+                </mat-card-title>
+                <!--title ends-->
+            </mat-card-header>
+            <!--mat card header ends-->
+
+            <mat-divider></mat-divider>
+            <!--divider line-->
+
+            <mat-card-content>
+                <!--taking inputs to add entity starts-->
+
+
+                <!-- For Category drop down -->
+                <!-- <div class="form-group">
+                    <label class="control-label" for="Category">Category:</label>
+                    <select required *ngIf="getCategory()" [(ngModel)]="selectedCategory"
+                        (change)="onSelectCategory($event.target.value)" class="form-control input-lg" id="category">
+                        <option value="0">Select Category</option>
+                        <option *ngFor="let category of getCategory()" value={{category.id}}>{{category.name}}</option>
+                    </select>
+                </div> -->
+
+                <!-- For Sub-category drop down -->
+                <div class="form-group">
+                    <label class="control-label" for="Sub-category">Sub Category:</label>
+                    <select [(ngModel)]="selectedSubCategory"
+                        class="form-control input-lg" id="subCat">
+                        <option value="0">Select Sub Category</option>
+                        <option *ngFor="let subCat of subCategory" value={{subCat.name}}>{{subCat.name}}</option>
+                    </select>
+                </div>
+                <!-- For brand drop down -->
+                <!-- <div class="form-group">
+                    <label class="control-label" for="Brand">Brand:</label>
+                    <select class="form-control input-lg" id="brand" [(ngModel)]="selectedBrand">
+                        <option value="0">Select brand</option>
+                        <option *ngFor="let brand of brands" value={{brand.id}}>{{brand.name}}</option>
+                    </select>
+                </div> -->
+<!-- for entity title -->
+                <div class="form-group"> 
+                    <label for="entity-title" class="control-label">Movie Title</label>
+                    <input required [(ngModel)]="movieTitle" class="form-control" placeholder="Please provide an movie title">
+                    </div>
+
+                    <div class="form-group"> 
+                        <label for="entity-title" class="control-label">Image Url</label>
+                        <input type="text"  required [(ngModel)]="imageUrl" class="form-control" ngModel pattern="/^(http[s]?:\/\/){0,1}(www\.){0,1}[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,5}[\.]{0,1}\" placeholder="Please provide an imageUrl">
+                    </div>
+
+                <!-- <form> -->
+                <!--form starts-->
+
+                <table style="width: 100%" cellspacing="20">
+                    <!--table starts-->     
+                    
+                    <!-- This code is for entity title -->
+                    <!-- <tr>
+                        <td>
+                            <div class="form-group">
+                                <mat-form-field floatLabel="auto" class="mat-form-full-width">
+                                    <mat-label>Entity title</mat-label>
+                                    <input matInput required [(ngModel)]="entityTitle">
+                                    <mat-hint>Please write the entity title</mat-hint>
+                                </mat-form-field>
+                                
+                            </div>
+                            
+                        </td>
+                    </tr> -->
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <mat-form-field floatLabel="auto" class="mat-form-full-width">
+                                    <!--Entity description starts-->
+                                    <label>Movie Descrption</label>
+                                    <textarea matInput [(ngModel)]="movieDescription" cols="30" rows="8"
+                                        required></textarea>
+                                    <mat-hint>Please describe about the entity</mat-hint>
+                                </mat-form-field>
+                                <!--Entity description ends-->
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <!-- <div class="container"> -->
+                            <!-- <form #imageForm=ngForm (ngSubmit)="OnSubmit(Image)">
+                            <div class="row">
+                           
+                                    <label class="p-2">Upload Image</label>
+                                   
+                                       <span class="p-2"><img [src]="imageUrl" style ="width:150px;height: 130px"></span>
+
+                                     
+
+                                     <div class="upload"> <input  type="file" #Image accept="image/*" (change)="handleFileInput($event.target.files)"> </div>   
+                                        <button type="submit"  class="btn-large btn-submit "[disabled]="Image.value=='' || !imageForm.valid" ></button>                         
+                                   
+                                  
+                                   
+                                
+                            </div>
+                            </form> -->
+                            <!-- </div> -->
+                        </td>
+                    </tr>
+                    <!-- Checking -->
+
+                    <!-- checking end -->
+
+                </table>
+                <!--table ends-->
+
+                <!-- </form> -->
+                <!--form ends -->
+
+            </mat-card-content>
+            <!--taking inputs to add entity ends-->
+            <mat-card-actions>
+                <button color="primary" mat-flat-button  (click)="saveEntity()"
+                    routerLinkActive="router-link-active">Submit</button>
+            </mat-card-actions>
+        </mat-card>
+        <!--card for adding new entity ends-->
+    </div>
+<br>                        
+<app-footer></app-footer>

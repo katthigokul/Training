@@ -1,0 +1,40 @@
+/* For width of the mat-form-field */
+.mat-form-full-width {
+    /* min-width: 150px;
+  max-width: 500px; */
+  width: 100%;
+}
+/* Container width  */
+.container {
+    width: 50%;
+  }
+
+  
+  /* for upload image */
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 100%;
+}
+
+.upload {
+  padding-top: 10px;
+}

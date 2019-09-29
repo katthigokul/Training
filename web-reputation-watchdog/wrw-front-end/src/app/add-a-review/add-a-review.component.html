@@ -1,0 +1,61 @@
+<app-header [isUserLoggedIn]='isUserLoggedIn' [domain]='domain' [emailId]='emailId' ></app-header>
+
+
+
+<!-- Required meta tags -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+
+<div class="container">
+  <!-- Header Row -->
+  <section class="row border" id="header">
+    <div class="col">
+      Add
+    </div>
+    <div class="col">
+      Review
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section class="row pt-5 border" id="product-section">
+    <section class="col">
+      <h4 class="row">{{card.entityName}}</h4>
+      <!-- TODO Change the image -->
+      <img [src]="card.entityImageUrl"  id="imgs" alt="Placeholder image" class="row rounded d-block" />
+      <ngb-rating class="row" [rate]="card.overAllRating"></ngb-rating>
+    </section>
+    <!-- Product Description -->
+    <section class="col">
+      <h5>
+        Description
+      </h5>
+      <p>
+        {{card.entityDescription}}
+      </p>
+    </section>
+  </section>
+  <!-- Review Form -->
+  <section class="row pt-5">
+    <div class="col">
+      <!-- Review Submit form -->
+
+      <form>
+        <div class="form-group">
+          <label>Review Title</label>
+          <textarea class="form-control" id="reviewTitleTextArea" rows="3" [(ngModel)]="reviewTitle"
+            name="reviewTitle"></textarea>
+          <label for="reviewTextArea">Review Text</label>
+          <textarea class="form-control" id="reviewTextArea" rows="7" [(ngModel)]="reviewText" name="review"></textarea>
+        </div>
+        <button  (click)="saveReview()" class="btn btn-primary" routerLinkActive="router-link-active">Submit</button>
+        <button (click)="goBack()" class="btn btn-primary">Cancel</button>
+      </form>
+    </div>
+  </section>
+
+</div>
+
+
+<app-footer></app-footer>

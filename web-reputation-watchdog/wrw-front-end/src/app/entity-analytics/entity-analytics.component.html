@@ -1,0 +1,112 @@
+<!-- <div class="container-fluid">
+  <app-header [isUserLoggedIn]='isUserLoggedIn'></app-header>
+  <div class="container jumbotron">
+    <div class="pie-chart">
+      <div class="row m-0 p-0 justify-content-center">
+        <div class="col-5">
+          <div class="row">
+            <br>
+            <span>Genuine vs Fake Reviews:</span>
+          </div><br>
+          <div>
+            <canvas id="pieChart"></canvas>
+          </div>
+          <br>
+          <br>
+        </div>
+        <div class="col-7">
+          <form class="row">
+            <span>Select a month and year:</span>
+            <br>
+            <input type="month" name="monthPick" min="2019-9-01" [(ngModel)]="monthWithYear"
+              style="background-color: gainsboro">
+            <input type="submit" value="View Graph" (click)=monthAndYearSetter()>
+          </form>
+          <div class="row m-0 p-0 justify-content-center">
+            <canvas id="line-graph" class="" style=""></canvas>
+          </div>
+          <br>
+          <br>
+        </div>
+        <hr>
+      </div>
+      <div class="row m-0 p-0 ">
+        <div class="col-12">
+          <span>Ratings for different aspects given by reviewers:</span><br>
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <canvas id="bar-graph" height="200em"></canvas><br>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<app-footer></app-footer> -->
+
+<app-header [isUserLoggedIn]='isUserLoggedIn' [domain]='domain' [emailId]='emailId' [title]='title'></app-header>
+<div class="container jumbotron justify-content-center">
+  <div class="row mt-5 p-0 justify-content-center">
+
+    <div class="col-12">
+      <div class="row justify-content-center">
+        <br>
+        <span>Genuine vs Fake Reviews:</span>
+      </div><br>
+      <div class="row justify-content-center">
+        <canvas id="pieChart" style="min-width: 200px; max-width: 500px"></canvas>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <div class="row m-0 p-0">
+    <div class="col-10 justify-content-center">
+      <span class="justify-content-center">Ratings for different aspects given by reviewers:</span><br>
+      <div class="row justify-content-center">
+        <div class="col-12" >
+          <canvas id="bar-graph" style="width:70%;  height:92.9%; line-height:400px;"></canvas><br>
+        <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-10 justify-content-center">
+    <form class="row justify-content-center">
+      <span>Select a month and year:</span>
+      <br>
+      <input type="month" name="monthPick" min="2019-9-01" [(ngModel)]="monthWithYear"
+        style="background-color: gainsboro">
+      <input type="submit" value="View Graph" (click)=monthAndYearSetter()>
+    </form>
+    <div class="row justify-content-center">
+      <canvas id="line-graph" style="height:380px; width: 100%; " class=""></canvas>
+    </div>
+  </div>
+  <button mdbBtn type="button" class="btn blue-gradient"  id= "sear" outline="true" mdbWavesEffect
+    (click)="goBack()">
+  <b> Back</b></button>
+
+
+
+
+</div>
+
+
+<app-footer></app-footer> 
+
+<!-- <div class="row m-0 p-0 ">
+    <div class="col-12">
+      <span>Ratings for different aspects given by reviewers:</span><br>
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <canvas id="bar-graph" height="200em"></canvas><br>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div> -->

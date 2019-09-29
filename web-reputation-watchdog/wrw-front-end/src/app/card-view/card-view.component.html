@@ -1,0 +1,86 @@
+<!-- Header Component -->
+<app-header [isUserLoggedIn]='isUserLoggedIn' [domain]='domain' [emailId]='emailId' [title]='title'></app-header>
+<!-- Card View Body -->
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <mdb-card-img [src]="card.entityImageUrl" alt="Card image cap"></mdb-card-img>
+        </div>
+        <div class="col-7">
+            <!-- <button type="button" class="btn btn-cyan" (click)="routeToAddReview()">Add
+                Review</button> -->
+            <div class="row">
+                <mdb-card-title>
+                    <h4>{{card.entityName}}</h4>
+                </mdb-card-title>
+            </div>
+            <div class="row">
+                <p>{{card.entityDescription}}</p><br>
+            </div>
+            <div class="row">
+                <b>
+                    <!-- <ngb-rating [rate]="card.overAllRating"></ngb-rating> -->
+                </b>
+            </div>
+            <div class="row">
+                <h4> Aspects Based Ratings </h4><br>
+            </div>
+
+            <div class="row" id="it"><br>
+                <div class="col">
+                    <ul *ngFor="let aspect of aspects">
+                        <li>
+                            <b>{{aspect}} : <ngb-rating [rate]="card.entityReview[aspect]"></ngb-rating>&nbsp;{{card.entityReview[aspect] | round : 4}}</b> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-12">
+            <button type="button" style="height: 45px; width: 200px;" class="btn aqua-gradient"
+                (click)="routeToAddReview()"><b>Add
+                    Review</b></button>
+            <button type="button" style="height: 45px; width: 200px;" class="btn aqua-gradient"
+                (click)=entityAnalyzer(card.entityName)>
+                <b>View Analysis</b>
+            </button>
+        </div>
+    </div>
+
+    <!-- Reviews -->
+
+    <div class="row"><br>
+        <h4>Reviews</h4>
+    </div><br>
+    <div class="row">
+        <div class="d-block col-12">
+            <ul *ngFor="let review of card.reviews.reverse() | paginate: { itemsPerPage: count, currentPage: p } ">
+                <li>
+                    <b>Title : </b> {{review.reviewTitle}}
+                </li>
+                <li><b>Description : </b> {{review.reviewDescription}}</li>
+                <li><b>Reviewed By :</b> {{review.reviewedBy}}</li>
+                <!-- <li><b>Time : </b> {{review.reviewedOn}}</li> -->
+                <!-- <li>
+                    <fa-icon [icon]="faThumbsUp"></fa-icon> {{review.upVote}}
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <fa-icon [icon]="faThumbsDown"></fa-icon> {{review.downVote}}
+                </li> -->
+                <li>
+                </li>
+                <hr>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--Including the pagination control.-->
+<div class="text-center">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+      </div>
+
+<!-- Footer Component -->
+
+<app-footer></app-footer>

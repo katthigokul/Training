@@ -1,0 +1,82 @@
+<!-- Nav Header -->
+<!-- <nav id="nav" class="navbar navbar-expand-lg font-weight-bold  bg-dark cyan fixed-top"> -->
+    <mdb-navbar   id="nav" SideClass="navbar navbar-expand-lg navbar-dark cyan fixed-top" [containerInside]="false">
+  <a class="navbar-brand"   (click)="routeTo()"><b>WRW</b></a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation"> 
+    <span  id="tog" class="navbar-toggler-icon" ></span>
+  </button>
+ 
+  
+
+  <!-- Categories dropdown -->
+
+  <div class="navbar-collapse collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="height: 45px; width: 150px;" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <b class="justify-content-center" id="cat"> CATEGORIES</b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" (click)="routeToDomain('movie')">MOVIES</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" (click)="routeToDomain('restaurant')">RESTAURANTS</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <div id="buttonHolder" *ngIf="isUserLoggedIn == true">
+        <button mdbBtn type="button" style="height: 45px" class="btn peach-gradient" outline="true" mdbWavesEffect type="submit"
+          (click)="routeToAddEntity('restaurant')" *ngIf="toggleButton"><b>ADD A RESTAURANT</b></button>
+        <button mdbBtn type="button" style="height: 45px; width: 200px" class="btn peach-gradient" outline="true" mdbWavesEffect type="submit"
+          (click)="routeToAddEntity('movie')" *ngIf="!toggleButton"><b>ADD A MOVIE</b></button>
+      </div>
+
+      <!-- Search Bar Component -->
+
+      <input class="form-control mr-sm-2" type="search" style="height: 45px; width: 350px;" placeholder="Search" aria-label="Search" #searchKey>
+
+
+
+      <button mdbBtn type="button" class="btn blue-gradient" style="height: 45px; width: 150px"  id= "sear" outline="true" mdbWavesEffect type="submit"
+        (click)="search(searchKey.value)">
+       <b> SEARCH</b></button>
+
+      <!-- Notification icon -->
+
+      <button mat-raised-button  id="noti" [matMenuTriggerFor]="menu"   [disabled]="isDisabled" *ngIf="isUserLoggedIn == true"><i
+          class="material-icons">
+          notification_important
+        </i>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item> {{notifications[0]}}</button>
+      </mat-menu>
+
+      <!-- Login -->
+      <div *ngIf="isUserLoggedIn == 'false' || isUserLoggedIn == false" >
+        <button mdbBtn type="button" *ngIf="isUserLoggedIn == 'false' || isUserLoggedIn == false" class="btn purple-gradient" outline="true" mdbWavesEffect type="submit"
+          routerLinkActive="active" style="height: 45px; width: 150px" (click)=onClick()><b>LOGIN</b></button>
+      </div>
+
+
+      <li id="nava" class="nav-item dropdown">
+        <button class=" btn btn-default dropdown-toggle" *ngIf="isUserLoggedIn == true || isUserLoggedIn == 'true'" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" style="height: 45px; width: 150px" aria-expanded="false">
+          <b class="justify-content-center">PROFILE</b>
+
+        </button>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" (click)=profile()><b>MY ACCOUNT</b></a>
+          <a class="dropdown-item" href="/"><b>LOG OUT</b></a>
+        </div>
+      </li>
+    </form>
+  </div>
+  </mdb-navbar>
+<!-- </nav> -->
+<!-- nav header stop -->
+
+
+

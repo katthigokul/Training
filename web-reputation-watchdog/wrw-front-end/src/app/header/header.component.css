@@ -1,0 +1,63 @@
+#from{
+    padding-left:200px;
+    
+}
+
+.form-inline
+{
+    text-align: center;
+}
+#noti
+{
+    color:white;
+}
+#tog
+{
+    right: 0.3em;
+    
+}
+/* #logo{
+
+    font-family:"Times New Roman", Times, serif;
+    color:whitesmoke;
+    font-size: 30px;
+    font-weight: 900;
+    font-weight: bold;
+    
+
+} */
+
+.navbar
+{
+    float: right;
+}
+#nav{
+    
+    color:whitesmoke;
+    font-size: 30px;
+    font-weight: 900;
+ 
+    
+}
+.navbar-brand{
+    font-family: 'Bitter';
+    color:whitesmoke;
+    font-size: 30px;
+
+}
+
+#nava{
+    margin-right:30px;
+    padding-right:none;
+    
+}
+#cat
+{
+    padding-top: 9px;
+}
+#navbarDropdown
+{
+    color:white;
+    font-weight: 500;
+    font-size: 15px;
+}

@@ -1,0 +1,857 @@
+{
+  "cards": [
+    {
+      "title": "Card Title 1",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "hello",
+              "Description": "hi",
+              "reviewedBy": "world",
+              "timestamp": "22/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 23,
+              "downVote": 13,
+              "rate": 2
+            },
+
+            {
+              "title": "hello",
+              "Description": "hi",
+              "reviewedBy": "world",
+              "timestamp": "22/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 23,
+              "downVote": 13,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Card Title 2",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Card Title 3",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Card Title 4",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Card Title 5",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Card Title 6",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Card Title 7",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Card Title 8",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Card Title 9",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Card Title 10",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Card Title 11",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Card Title 12",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "recommended": [
+    {
+      "title": "Card Title 1",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "hello",
+              "Description": "hi",
+              "reviewedBy": "world",
+              "timestamp": "22/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 23,
+              "downVote": 13,
+              "rate": 2
+            },
+
+            {
+              "title": "hello",
+              "Description": "hi",
+              "reviewedBy": "world",
+              "timestamp": "22/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 23,
+              "downVote": 13,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Card Title 2",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Card Title 3",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Card Title 4",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Card Title 5",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "title": "Card Title 6",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Card Title 7",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Card Title 8",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Card Title 9",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Card Title 10",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "title": "Card Title 11",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Card Title 12",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card content",
+      "buttonText": "Review",
+      "img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg",
+      "rate": 3,
+      "reviews": [
+        {
+          "review": [
+            {
+              "title": "Good",
+              "Description": "It was a nice product",
+              "reviewedBy": "raj",
+              "timestamp": "29/03/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 223,
+              "downVote": 13,
+              "rate": 4
+            },
+
+            {
+              "title": "Bad",
+              "Description": "Not worthy",
+              "reviewedBy": "praveen",
+              "timestamp": "22/06/2018/13:04:25",
+              "genuine": "True",
+              "upVote": 253,
+              "downVote": 123,
+              "rate": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "UserProfile": [
+    {
+      "FirstName": "Ravi",
+      "LastName": "Kumar",
+      "EmailId": "ravi.kumar@cgi.com",
+      "MobileNumber": 9087654321,
+      "Myreviews": [],
+      "MyEntities": [],
+      "UserScore": 30
+    }
+  ],
+  "Movie": [
+    {
+      "src1": "../../assets/images/265711.jpg"
+    },
+    {
+      "src2": "../../assets/images/nvp.jpg"
+    },
+    {
+      "src3": "../../assets/images/thumb-1920-480134.jpg"
+    }
+  ],
+  "Restaurant": [
+    {
+      "src1": "../../assets/images/f9855049304b8c4e9debe158a74e5ae8.jpg"
+    },
+    {
+      "src2": "../../assets/images/73ad7f4bb9da1bfd8fb04ed22f073307.jpg"
+    },
+    {
+      "src3": "../../assets/images/535521cd09f1e0a8920ed5019ca09c51.jpg"
+    }
+  ]
+}

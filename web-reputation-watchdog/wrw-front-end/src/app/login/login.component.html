@@ -1,0 +1,97 @@
+<div class="limiter">
+  <div class="container-login100">
+    <div class="wrap-login100">
+      <div class="login100-pic js-tilt" data-tilt>
+        <img src="../../assets/img-01.png" alt="IMG">
+      </div>
+
+      <div>
+        <div class="login100-form validate-form">
+          <span class="login100-form-title">
+            Member Login
+          </span>
+
+          <h5 class="invalid" *ngIf="invalid">Invalid Credentials!!</h5><br>
+          <form [formGroup]="loginForm" autocomplete="off">
+            <label>Email</label>
+            <input  class="form-control"  formControlName="emailId" pattern="^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$"  >
+            
+            <div class="mb-2" *ngIf="submitted1 && loginForm.controls.emailId?.errors" class="formError">
+              <div *ngIf="loginForm.controls.emailId?.errors.required">Email cannot be blank
+              </div>
+              
+            </div>
+
+            <label class="mt-2">Password</label>
+            <input type="password" class="form-control" formControlName="password">
+            <div class="mb-2" *ngIf="submitted1 && loginForm.controls.password?.errors" class="formError">
+              <div *ngIf="loginForm.controls.password?.errors.required" >Password cannot be blank</div>
+              
+              </div>
+              
+          </form>
+
+          <div class="row">
+            <div class="mt-2">
+              <mat-checkbox >Remember Me</mat-checkbox>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <button (click)="login(template)" style="width: 40%; background-color: #007bff; padding: 2%"
+              class="btn btn-primary mt-3">Login</button>
+               
+            <ng-template #template>
+              <div class="modal-header">
+                <h4 class="modal-title pull-left">CATEGORY</h4>
+                <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="list-group d-flex flex-row">
+                  <a (click)="onModal('movie')" id="movie" class="list-group-item list-group-item-action">
+                    <span>
+                      <i id="mov" class="large material-icons"> movies </i>Movies
+                    </span>
+                  </a>
+                  <a (click)="onModal('restaurant')" id="restaurant"  class="list-group-item list-group-item-action">
+                    <span>
+                      <i id="mov" class="large material-icons"> restaurants </i>
+                    </span>
+                    Restaurants</a>
+                  <a href="#" class="list-group-item list-group-item-action disabled">
+                    <span>
+                      <i id="mov" class="large material-icons"> important_devices </i>
+                    </span>
+                    Electronics</a>
+                  <a href="#" id="real" class="list-group-item list-group-item-action disabled">
+                    <span>
+                      <i id="real" class="material-icons">
+                        house
+                      </i></span>RealEstate</a>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+
+          <div class="row justify-content-center">
+            <button (click)="signInWithGoogle()" style="width: 60%; background-color: #007bff; padding: 2%"
+              class="btn btn-primary mt-3">Login With Google</button>
+          </div>
+          <br>
+
+
+
+          <div class="text-center p-t-136">
+            <a class="txt2" (click)="changeLoginStatus()">
+              Create your Account
+              <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

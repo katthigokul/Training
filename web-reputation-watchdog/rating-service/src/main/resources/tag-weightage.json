@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Taste",
+    "fields": [
+      "taste",
+      "food",
+      "cooking",
+      "drink",
+      "Taste"
+    ],
+    "weightage": 0.8
+  },
+  {
+    "name": "Service",
+    "fields": [
+      "service",
+      "ambience",
+      "cleanliness",
+      "hospitality",
+      "Service"
+    ],
+    "weightage": 0.5
+  },
+  {
+    "name": "Atmosphere",
+    "fields": [
+      "atmosphere",
+      "Atmosphere"
+    ],
+    "weightage": 0.5
+  },
+  {
+    "name": "Value For Money",
+    "fields": [
+      "value for money",
+      "quantity",
+      "Value For Money"
+    ],
+    "weightage": 0.4
+  },
+  {
+    "name": "Plot",
+    "fields": [
+      "plot",
+      "Plot"
+    ],
+    "weightage": 0.6
+  },
+  {
+    "name": "Performance",
+    "fields": [
+      "performance",
+      "Performance"
+    ],
+    "weightage": 0.5
+  },
+  {
+    "name": "Music",
+    "fields": [
+      "music",
+      "Music"
+    ],
+    "weightage": 0.5
+  },
+  {
+    "name": "Cinematography",
+    "fields": [
+      "cinematography",
+      "Cinematography"
+    ],
+    "weightage": 0.4
+  }
+]

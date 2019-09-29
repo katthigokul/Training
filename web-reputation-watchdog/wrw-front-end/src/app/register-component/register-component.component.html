@@ -1,0 +1,47 @@
+<app-header></app-header>
+<mat-horizontal-stepper  id="step" [linear]="isLinear" #stepper>
+ <mat-step [stepControl]="firstFormGroup" [routerLink]="step1">
+   <form [formGroup]="firstFormGroup"  id="steps">
+     <ng-template matStepLabel id="fill" style="color: black" ><h4><b>Fill Out Your Name</b></h4></ng-template>
+     <mat-form-field>
+       <input  type="text" matInput placeholder="First Name"  pattern="^[a-zA-Z]*$" [(ngModel)]=user.firstName formControlName="FirstName" required><hr>
+    
+     </mat-form-field><br>
+     <mat-form-field>
+       <input matInput type="text" placeholder="Last Name" pattern="^[a-zA-Z]*$" [(ngModel)]=user.lastName formControlName="LastName" required><hr>
+     </mat-form-field>
+     <div>
+       <button class="btn aqua-gradient" mat-button matStepperNext>Next</button>
+     </div>
+   </form>
+ </mat-step>
+ <mat-step [stepControl]="secondFormGroup" [routerLink]="step2" style="color:black">
+   <form [formGroup]="secondFormGroup" id="steps">
+     <ng-template matStepLabel ><h4><b>Fill Out Your Email Address</b></h4></ng-template>
+     <mat-form-field>
+       <input matInput type="email" placeholder="Enter valid email"  pattern="^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" [(ngModel)]= user.emailId formControlName="EmailId" required><hr>
+     </mat-form-field><br>
+     <mat-form-field>
+       <input matInput type="password" placeholder="password" [(ngModel)]=user.password formControlName="password" required><hr>
+     </mat-form-field>
+     <div>
+       <button class="btn peach-gradient" mat-button matStepperPrevious>Back</button>
+       <button  class="btn aqua-gradient" (click) = "checkStatus()" mat-button matStepperNext>Next</button>
+     </div>
+   </form>
+ </mat-step>
+ <mat-step [stepControl]="ThirdFormGroup" [routerLink]="step3">
+   <form [formGroup]=" ThirdFormGroup" id="steps">
+     <ng-template matStepLabel><h4><b>Fill Out Your Mobile Number</b></h4></ng-template>
+     <mat-form-field>
+       <input type="number" pattern="[1-9]{1}[0-9]{9}" matInput placeholder="Enter Valid Mobile Number"  [(ngModel)]=user.mobileNumber formControlName="mobile" required><hr>
+     </mat-form-field><br>
+     <div>
+       <button class="btn peach-gradient" mat-button matStepperPrevious>Back</button>
+       <button  class="btn purple-gradient" mat-button (click)="onSubmit()">Submit</button>
+     </div>
+   </form>
+ </mat-step>
+
+</mat-horizontal-stepper>
+<app-footer></app-footer>

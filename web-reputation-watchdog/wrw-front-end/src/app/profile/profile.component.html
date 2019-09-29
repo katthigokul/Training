@@ -1,0 +1,246 @@
+<app-header [isUserLoggedIn]="isUserLoggedIn"></app-header>
+<hr />
+<hr>
+<hr>
+
+
+
+<div class="profileParent d-flex flex-column">
+  <div class="container emp-profile">
+    <form method="post">
+      <div class="row">
+        <div class="col-md-4">
+          <!-- <div class="profile-img">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog"
+              alt=""
+            />
+            <div class="file btn btn-lg btn-primary">
+              Change Photo
+              <input type="file" name="file" />
+            </div>
+          </div> -->
+        </div>
+
+        <div class="col-md-6">
+          <div class="profile-head">
+            <h5>
+              <button [routerLink]="['/profile']" routerLinkActive="active">
+                My profile
+              </button>
+            </h5>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              style="position: absolute; right: 10%; margin-top: 40px;"
+              data-toggle="modal"
+              data-target="#form"
+            >
+              Edit Profile
+            </button>
+            <br>
+            <br>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="home-tab"
+                  data-toggle="tab"
+                  href="#home"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="true"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="profile-work"></div>
+        </div>
+        <div class="col-md-8">
+          <div class="tab-content profile-tab" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <div class="row">
+                <div class="col-md-6">
+                  <label>First Name</label>
+                </div>
+                <div class="col-md-6">
+                  <p>{{ userServices?.firstName }}</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Last Name</label>
+                </div>
+                <div class="col-md-6">
+                  <p>{{ userServices?.lastName }}</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Email Id</label>
+                </div>
+                <div class="col-md-6">
+                  <p>{{ userServices?.emailId }}</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Mobile Number</label>
+                </div>
+                <div class="col-md-6">
+                  <p>{{ userServices?.mobileNumber }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div
+      class="modal fade"
+      id="form"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Profile</h5>
+            <button
+              type="button"
+              #closebutton
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="email">Email Id</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="emailId"
+                  aria-describedby="emailHelp"
+                  [(ngModel)]="userServices.emailId"
+                  
+                />
+              </div>
+              <div class="form-group">
+                <label for="name">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="firstName"
+                  [(ngModel)]="userServices.firstName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="number">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="mobileNumber"
+                  [(ngModel)]="userServices.lastName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="LastName">Mobile Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="lastname"
+                  [(ngModel)]="userServices.mobileNumber"
+                />
+              </div>
+            </div>
+            <div
+              class="modal-footer border-top-0 d-flex justify-content-center"
+            >
+              <button
+                type="submit"
+                class="btn btn-success"
+                (click)="onSubmitUpdate()"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <div class="profileParent d-flex flex-column makecenter" >
+    <div class="row">
+        <div class="col" style="color:white">
+          <h3><b>My Entities</b> </h3>
+        </div>
+      </div>
+      <div class="controls-top">
+          <a class="btn-floating waves-effect waves-light" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+          <a class="btn-floating waves-effect waves-light" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+        </div>
+
+  
+  <div class="row">
+      <a _ngcontent-lfc-c1="" class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button"><span _ngcontent-lfc-c1="" aria-hidden="true" class="carousel-control-prev-icon"></span><span _ngcontent-lfc-c1="" class="sr-only">Previous</span></a>
+      <a _ngcontent-lfc-c1="" class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button"><span _ngcontent-lfc-c1="" aria-hidden="true" class="carousel-control-prev-icon"></span><span _ngcontent-lfc-c1="" class="sr-only">Next</span></a>  
+      <mdb-carousel
+      [isControls]="true"
+      class="carousel-multi-item multi-animation"
+      [animation]="'slide'"
+    >
+    
+      <mdb-carousel-item *ngFor="let item of slides; let i = index">
+        <div
+          class="col-md-3"
+          [ngClass]="{ 'd-none d-md-block':cardsDataindex !== 0 }"
+          *ngFor="
+            let cardsData of item;
+            let cardsDataIndex = index
+          "
+        >
+          <mdb-card class="my-1">
+            <mdb-card-img
+              [src]="cardsData.entityImageUrl"
+              (click)="selectedEntity(cardsData.entityName, 1)"
+              alt="Card image cap"
+            ></mdb-card-img>
+            <mdb-card-body>
+              <mdb-card-title>
+                <h4>{{ cardsData.entityName }}</h4>
+              </mdb-card-title>
+              <p>{{ cardsData.entityDescription | truncate:30:"..."}}</p>
+              <br />
+              <ngb-rating [rate]="cardsData.rate"></ngb-rating>
+            </mdb-card-body>
+          </mdb-card>
+          <br>
+          <br>
+        </div>
+      </mdb-carousel-item>
+    </mdb-carousel>
+    </div>
+  </div>
+   
+   <app-footer></app-footer>
